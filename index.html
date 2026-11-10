@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Todo para cuidar a tu mejor amigo. Veterinaria y pet shop." />
+  <title>Huella · Veterinaria y pet shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    Pequeñas huellas. Grandes amores. <span>✦</span> Todo para cuidar a tu mejor amigo.
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Huella, inicio">
+      <span class="brand-paw" aria-hidden="true">🐾</span>
+      <span><strong>huella</strong><small>VETERINARIA &amp; PET SHOP</small></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <a class="button button-green" href="#contacto">Hablemos <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main>
+    <section class="hero page-width" id="inicio">
+      <div class="hero-copy" data-reveal="left">
+        <span class="eyebrow-pill">♡ &nbsp; SU BIENESTAR NOS MUEVE</span>
+        <h1>Para ellos,<br />que lo son<br />todo.</h1>
+        <p>
+          Su salud, sus juegos y sus pequeños antojos. Encuentra cuidado
+          veterinario y productos para acompañar cada etapa de su vida.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-coral" href="#catalogo">Explorar el catálogo <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#servicios">Conoce nuestros cuidados →</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal="right">
+        <img
+          class="hero-image"
+          src="https://api.builder.io/api/v1/image/assets/TEMP/6ff6c067e3752cb13e4cd657521b78f81696d090?width=1228"
+          alt="Mascotas disfrutando juntas"
+        />
+        <div class="care-badge">
+          <span aria-hidden="true">🐾</span>
+          <strong>HECHO CON<br />AMOR</strong>
+        </div>
+        <div class="family-note">
+          <span class="heart" aria-hidden="true">♡</span>
+          <strong>Más que mascotas,<br /><b>son familia.</b></strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Nuestros beneficios">
+      <div class="benefits-inner">
+        <div class="benefit" data-reveal>
+          <span aria-hidden="true">♢</span>
+          <div><strong>Cuidado responsable</strong><small>Orientación para cada mascota</small></div>
+        </div>
+        <div class="benefit" data-reveal>
+          <span aria-hidden="true">🐾</span>
+          <div><strong>Todo en un solo lugar</strong><small>Salud, nutrición y diversión</small></div>
+        </div>
+        <div class="benefit" data-reveal>
+          <span aria-hidden="true">☏</span>
+          <div><strong>Atención cercana</strong><small>Te ayudamos a elegir mejor</small></div>
+        </div>
+        <div class="benefit" data-reveal>
+          <span aria-hidden="true">♡</span>
+          <div><strong>Amor por los animales</strong><small>Su bienestar es lo primero</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section page-width" id="categorias">
+      <p class="eyebrow">UN MUNDO PARA SUS HUELLAS</p>
+      <h2>¿Qué necesita tu mejor amigo?</h2>
+      <p class="section-intro">Encuentra un poquito de todo para quererlos mucho.</p>
+      <div class="category-grid">
+        <a class="category tile-peach" data-reveal href="#catalogo"><span>♧</span>Alimentación</a>
+        <a class="category tile-lime" data-reveal href="#catalogo"><span>♢</span>Antiparasitarios</a>
+        <a class="category tile-pink" data-reveal href="#catalogo"><span>♡</span>Suplementos</a>
+        <a class="category tile-sage" data-reveal href="#catalogo"><span>♧</span>Higiene y cuidado</a>
+        <a class="category tile-yellow" data-reveal href="#catalogo"><span>⌁</span>Snacks y premios</a>
+        <a class="category tile-lilac" data-reveal href="#catalogo"><span>▱</span>Accesorios</a>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalogo">
+      <div class="catalog-inner">
+        <p class="eyebrow">SELECCIONADOS CON CARIÑO</p>
+        <h2>Pequeños cuidados, gran bienestar.</h2>
+        <p class="section-intro">Explora nuestros productos y consúltanos por disponibilidad y precio.</p>
+
+        <div class="catalog-controls">
+          <div class="filter-list" aria-label="Filtrar productos">
+            <button class="filter-button is-active" type="button" data-filter="Todos" aria-pressed="true">Todos</button>
+            <button class="filter-button" type="button" data-filter="Perros" aria-pressed="false">Perros</button>
+            <button class="filter-button" type="button" data-filter="Gatos" aria-pressed="false">Gatos</button>
+            <button class="filter-button" type="button" data-filter="Antiparasitarios" aria-pressed="false">Antiparasitarios</button>
+            <button class="filter-button" type="button" data-filter="Nutrición" aria-pressed="false">Nutrición</button>
+            <button class="filter-button" type="button" data-filter="Higiene" aria-pressed="false">Higiene</button>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="product-search" type="search" placeholder="Buscar un producto..." />
+          </label>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-reveal data-categories="Perros Antiparasitarios">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/57da02869b686fed0590c7b9828334abff8eb1dc?width=564" alt="EctoLock XS" />
+              <span class="product-tag tag-pink">Talla XS</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">ANTIPARASITARIOS</p>
+            <h3>EctoLock XS · 11,3 mg</h3>
+            <p class="product-description">Perros de 2 a 4 kg · 1 tableta</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+
+          <article class="product-card" data-reveal data-categories="Perros Antiparasitarios">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/3bea41b2d39f3c1d8a64f28767bd60b0e13dda18?width=564" alt="EctoLock S" />
+              <span class="product-tag tag-yellow">Talla S</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">ANTIPARASITARIOS</p>
+            <h3>EctoLock S · 28,3 mg</h3>
+            <p class="product-description">Perros de 4 a 10 kg · 1 tableta</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+
+          <article class="product-card" data-reveal data-categories="Perros Antiparasitarios">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/f234820d9a56a25fadc24fb30ac8922f53b9c5d5?width=564" alt="EctoLock M" />
+              <span class="product-tag tag-blue">Talla M</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">ANTIPARASITARIOS</p>
+            <h3>EctoLock M · 68 mg</h3>
+            <p class="product-description">Perros de 10 a 25 kg · 1 tableta</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+
+          <article class="product-card" data-reveal data-categories="Perros Antiparasitarios">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/07934f26ccd012a7e77d1be337c46ccbc67278db?width=564" alt="EctoLock L" />
+              <span class="product-tag tag-lime">Talla L</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">ANTIPARASITARIOS</p>
+            <h3>EctoLock L · 136 mg</h3>
+            <p class="product-description">Perros de 25 a 50 kg · 1 tableta</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+
+          <article class="product-card" data-reveal data-categories="Perros Gatos Nutrición">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/acf226d92cd0e42b4a4deb1ef609a565f53c30de?width=564" alt="DL Shield Mascotas" />
+              <span class="product-tag tag-lime">Nutrición</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">SUPLEMENTOS</p>
+            <h3>DL Shield Mascotas</h3>
+            <p class="product-description">Perros y gatos · Presentación de 150 g</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+
+          <article class="product-card" data-reveal data-categories="Gatos Nutrición">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/67b9cc2c2b38df3d626c46f5f07e0a7241fe6a5a?width=564" alt="Snacks Calabaza Pets" />
+              <span class="product-tag tag-pink">¡A consentir!</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">SNACKS Y PREMIOS</p>
+            <h3>Snacks Calabaza Pets</h3>
+            <p class="product-description">Premios y snacks · Consulta variedades</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+
+          <article class="product-card" data-reveal data-categories="Gatos Higiene">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/367329fdef2682cc3a904d96a05a10828440a6f1?width=564" alt="EpiOtic de Virbac" />
+              <span class="product-tag tag-sage">Cuidado</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">HIGIENE Y CUIDADO</p>
+            <h3>EpiOtic · Virbac</h3>
+            <p class="product-description">Limpiador auricular · 100 ml</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+
+          <article class="product-card" data-reveal data-categories="Perros Gatos Nutrición">
+            <div class="product-image-wrap">
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/ea25fff8db4243cff30055877a915693a1a9b92f?width=564" alt="Productos para bienestar y suplementos" />
+              <span class="product-tag tag-peach">Más opciones</span>
+              <span class="save-heart" aria-hidden="true">♡</span>
+            </div>
+            <p class="product-category">SUPLEMENTOS</p>
+            <h3>Bienestar y suplementos</h3>
+            <p class="product-description">Piel, pelo y articulaciones · Varias opciones</p>
+            <a class="product-link" href="#contacto">Consultar precio <span>→</span></a>
+          </article>
+        </div>
+
+        <p class="empty-message" id="empty-message" hidden>No encontramos productos con esa búsqueda.</p>
+        <p class="catalog-note">Los productos veterinarios deben usarse con orientación profesional. La presentación adecuada depende de cada mascota.</p>
+      </div>
+    </section>
+
+    <section class="advice page-width" id="nosotros" data-reveal>
+      <div>
+        <p class="advice-eyebrow">CADA MASCOTA ES ÚNICA</p>
+        <h2>Elegir bien también<br />es una forma de querer.</h2>
+        <p>Cuéntanos su edad, su peso y lo que necesita.<br />Te orientamos para encontrar su cuidado ideal.</p>
+      </div>
+      <a class="button button-lime" href="#contacto">Necesito una recomendación <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="content-section page-width" id="servicios">
+      <p class="eyebrow">MÁS ALLÁ DEL CATÁLOGO</p>
+      <h2>Cuidamos lo que más quieres.</h2>
+      <p class="section-intro">Un espacio para resolver dudas y acompañar su bienestar.</p>
+      <div class="service-grid">
+        <article class="service-card" data-reveal><span>✚</span><h3>Atención veterinaria</h3><p>Acompañamiento para cuidar su salud en cada etapa de la vida.</p><a href="#contacto" aria-label="Consultar por atención veterinaria">→</a></article>
+        <article class="service-card" data-reveal><span>♢</span><h3>Prevención</h3><p>Orientación sobre antiparasitarios y cuidado preventivo.</p><a href="#contacto" aria-label="Consultar por prevención">→</a></article>
+        <article class="service-card" data-reveal><span>♡</span><h3>Nutrición y bienestar</h3><p>Ayuda para elegir alimentación, suplementos y hábitos de cuidado.</p><a href="#contacto" aria-label="Consultar por nutrición y bienestar">→</a></article>
+      </div>
+    </section>
+
+    <section class="steps-section">
+      <div class="page-width">
+        <p class="eyebrow">ASÍ DE FÁCIL</p>
+        <h2>Del catálogo a sus patitas.</h2>
+        <div class="steps-grid">
+          <article data-reveal><span class="step-number">01</span><div><h3>Elige sus favoritos</h3><p>Explora el catálogo y encuentra lo que necesita.</p></div></article>
+          <article data-reveal><span class="step-number">02</span><div><h3>Hablemos de tu mascota</h3><p>Consulta precio, presentación y disponibilidad.</p></div></article>
+          <article data-reveal><span class="step-number">03</span><div><h3>Coordina tu compra</h3><p>Acuerda con nosotros el pago y la entrega.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section page-width">
+      <div class="faq-intro" data-reveal="left">
+        <p class="eyebrow">TE ACOMPAÑAMOS</p>
+        <h2>Dudas pequeñas.<br />Respuestas con<br />mucho cariño.</h2>
+        <p>Si necesitas algo más, estamos para ayudarte.</p>
+        <a class="text-link" href="#contacto">♡ &nbsp; Conversemos sobre tu mascota</a>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item" data-reveal>
+          <button class="faq-question" type="button" aria-expanded="true">
+            ¿Cómo elijo la talla del antiparasitario? <span aria-hidden="true">−</span>
+          </button>
+          <div class="faq-answer">
+            La presentación depende del peso de tu perro. Antes de usarlo,
+            confirma su peso actual y consulta con un profesional veterinario.
+            No elijas la dosis solamente por su raza o tamaño aparente.
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-question" type="button" aria-expanded="false">
+            ¿Tienen productos para perros y gatos? <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            Sí, contamos con productos para perros y gatos. Consúltanos por la
+            opción adecuada para tu mascota.
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-question" type="button" aria-expanded="false">
+            ¿Cómo consulto precios y disponibilidad? <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" hidden>
+            Escríbenos y te responderemos con precio, presentación y disponibilidad.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact-inner page-width">
+        <div data-reveal="left">
+          <p class="contact-eyebrow">ESTAMOS CERCA, COMO ELLOS DE TI</p>
+          <h2>Su próxima alegría<br />empieza con un hola.</h2>
+          <p>Productos, cuidados y orientación para tu compañero de vida.</p>
+        </div>
+        <a class="button button-cream" href="https://wa.me/REEMPLAZA_CON_TU_NUMERO">
+          Hablemos por WhatsApp <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main page-width">
+      <div>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-paw" aria-hidden="true">🐾</span>
+          <span><strong>huella</strong><small>VETERINARIA &amp; PET SHOP</small></span>
+        </a>
+        <p>Cuidamos su salud. Celebramos su compañía.</p>
+      </div>
+      <div>
+        <h2>EXPLORA</h2>
+        <div class="footer-links"><a href="#catalogo">Catálogo</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a></div>
+      </div>
+      <div>
+        <h2>SIEMPRE CONTIGO</h2>
+        <p>Atención, horarios y entregas:<br />consúltanos antes de tu visita.</p>
+      </div>
+    </div>
+    <div class="footer-bottom page-width">
+      <span>Huella · Hecho para quienes aman a los animales.</span>
+      <span>Cada huella cuenta. ♡</span>
+    </div>
+  </footer>
+</body>
+</html>
